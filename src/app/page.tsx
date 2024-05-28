@@ -6,6 +6,7 @@ export default function Home() {
       <section className="home">
         <div className="title">
           <h1>Só queria comer canudo</h1>
+          <Image src="/blob.png" alt="blob" width={300} height={400}></Image>
         </div>
         <div className="wave" id="wave1"></div>
         <div className="wave" id="wave2"></div>
@@ -18,10 +19,8 @@ export default function Home() {
         <p>Glub glub glub glub glub glub glub glub glub glub, glub glub glub glub glub glub glub glub glub glub glub? Glub glub glub glub glub glub glub glub glub glub glub glub glub glub glub glub glub. Glub glub glub glub glub glub glub glub glub glub glub glub glub glub, glub glub glub glub glub glub glub glub glub glub glub glub. Glub glub glub glub glub glub glub glub glub glub glub glub, glub glub glub glub glub glub glub glub glub glub glub. Glub glub glub glub glub glub glub glub glub glub glub glub glub glub glub glub.
         <br /><br />
         Glub glub glub glub glub glub glub glub glub glub glub glub glub glub glub glub glub? Glub glub glub glub glub glub glub glub glub glub glub glub glub glub glub glub. Glub glub glub glub glub glub glub glub glub glub glub glub glub glub glub glub glub. Glub glub glub glub glub glub glub glub glub glub glub glub glub glub glub, glub glub glub glub glub glub glub glub glub glub glub glub. Glub glub glub glub glub glub glub glub glub glub glub glub glub glub glub glub.
-        <br /><br />
-        Glub glub glub glub glub glub glub glub glub glub glub glub glub glub glub glub glub? Glub glub glub glub glub glub glub glub glub glub glub glub glub glub glub glub. Glub glub glub glub glub glub glub glub glub glub glub glub glub glub glub glub glub. Glub glub glub glub glub glub glub glub glub glub glub glub glub glub glub, glub glub glub glub glub glub glub glub glub glub glub glub. Glub glub glub glub glub glub glub glub glub glub glub glub glub glub glub glub.
-        <br /><br />
-        Glub glub glub glub glub glub glub glub glub glub glub glub glub glub glub glub glub? Glub glub glub glub glub glub glub glub glub glub glub glub glub glub glub glub. Glub glub glub glub glub glub glub glub glub glub glub glub glub glub glub glub glub. Glub glub glub glub glub glub glub glub glub glub glub glub glub glub glub, glub glub glub glub glub glub glub glub glub glub glub glub. Glub glub glub glub glub glub glub glub glub glub glub glub glub glub glub glub.</p>
+        <br /><br /></p>
+        <Image src="/image.jpg" alt="swimmin" width={500} height={400}></Image>
       </section>
     </main>
   );
