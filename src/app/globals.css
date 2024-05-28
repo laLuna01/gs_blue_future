@@ -1,33 +1,78 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background-color: rgb(221, 199, 172);
+  background-image: url("/bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+.home {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+.title{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  z-index: -1;
+  font-size: 40px;
+}
+.content {
+  padding: 100px;
+  background-image: linear-gradient(#b1b9fa, rgb(49, 49, 197));
+  width: 100%;
+  height: 100vh;
+}
+@keyframes waving {
+  0% {
+    transform: translateY(0px);
   }
+  100% {
+    transform: translateY(50px);
+  }
+}
+.wave {
+  width: 100%;
+  height: 200px;
+  position: absolute;
+  bottom: 0;
+  background-image: url("/wave.png");
+  background-size: 1000px 200px;
+}
+#wave1 {
+  z-index: 1000px;
+  opacity: 0.8;
+  background-position-x: 400px; 
+  animation: waving 5s ease-in-out infinite alternate;
+  animation-delay: 1s;
+}
+#wave2 {
+  z-index: 999px;
+  opacity: 0.4;
+  background-position-x: 300px; 
+  animation: waving 5s ease-in-out infinite alternate;
+  animation-delay: 3s;
+}
+#wave3 {
+  z-index: 998px;
+  opacity: 0.2;
+  background-position-x: 200px; 
+  animation: waving 5s ease-in-out infinite alternate;
+  animation-delay: 4s;
+}
+#wave4 {
+  z-index: 997px;
+  opacity: 0.1;
+  background-position-x: 100px; 
+  animation: waving 5s ease-in-out infinite alternate;
+  animation-delay: 5s;
 }
