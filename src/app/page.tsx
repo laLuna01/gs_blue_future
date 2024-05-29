@@ -3,10 +3,9 @@ import Image from "next/image";
 export default function Home() {
   return (
     <main>
-      <section className="home">
+      <section className="hero">
         <div className="title">
-          <h1>Só queria comer canudo</h1>
-          <Image src="/blob.png" alt="blob" width={300} height={400}></Image>
+          <h1>Mergulhe em um <span>Oceano <br />Sustentável</span></h1>
         </div>
         <div className="wave" id="wave1"></div>
         <div className="wave" id="wave2"></div>

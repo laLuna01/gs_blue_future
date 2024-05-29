@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -12,7 +14,7 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
-.home {
+.hero {
   position: relative;
   width: 100%;
   height: 100vh;
@@ -76,4 +78,17 @@ body {
   background-position-x: 100px; 
   animation: waving 5s ease-in-out infinite alternate;
   animation-delay: 5s;
+}
+h1 {
+  text-align: center;
+  font-family: Merienda;
+  color: #52320e;
+  font-size: 60px;
+  font-weight: bolder;
+  line-height: 100px;
+  padding-bottom: 60px;
+  text-shadow: white 1px 0 4px;
+}
+h1 > span {
+  color: rgb(20, 73, 133);
 }

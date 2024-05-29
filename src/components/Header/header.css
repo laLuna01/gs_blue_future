@@ -39,7 +39,7 @@ header {
     transition: 0.3s;
 }
 .page-link:hover {
-    color: #0961A3;
+    color: rgb(20, 73, 133);
 }
 .page-link:hover:after {
     width: 100%;
