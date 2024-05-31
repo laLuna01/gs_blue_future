@@ -22,11 +22,12 @@ header {
     flex-direction: column;
 }
 .page-link {
-    font-size: large;
-    color: #172532;
+    font-size: 20px;
+    color: #FFFFFF;
     font-weight: 600;
     position: relative;
     padding: 0 4px;
+    font-family: Lato;
 }
 .page-link:after {
     content: "";
@@ -39,7 +40,7 @@ header {
     transition: 0.3s;
 }
 .page-link:hover {
-    color: rgb(20, 73, 133);
+    color: #DCE7ED;
 }
 .page-link:hover:after {
     width: 100%;

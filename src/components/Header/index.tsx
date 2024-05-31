@@ -7,7 +7,7 @@ const Header = () => {
     <header>
         <nav className="navbar">
             <a href="/">
-                <Image src="/ship.svg" alt="Logo" width={45} height={55}></Image>
+                <Image src="/logo.svg" alt="Logo" width={45} height={55}></Image>
             </a>
             <ul className="pages">
               <li>
@@ -23,7 +23,7 @@ const Header = () => {
                 <a className="page-link" href="">Sobre</a>
               </li>
             </ul>
-            <a href="">
+            <a href="./login">
                 <Image src="/user.svg" alt="Login" width={45} height={50}></Image>
             </a>
         </nav>
