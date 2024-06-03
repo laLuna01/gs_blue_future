@@ -9,9 +9,7 @@
   box-sizing: border-box;
 }
 body {
-  background-image: url("/bg3.jpeg");
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-color: blue;
 }
 section {
   width: 100%;
@@ -21,6 +19,10 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
+  background-image: url("/bg6.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 .title{
   display: flex;
@@ -47,7 +49,7 @@ h1 > span {
 .login, .signup {
     display: flex;
     justify-content: flex-end;
-    background-image: url("/bg2.jpg");
+    background-image: url("/bg7.jpg");
     background-size: cover;
     background-position: center;
 }
@@ -55,7 +57,7 @@ h1 > span {
   display: flex;
   flex-direction: column;
   padding: 0px 80px;
-  background-color: #172532;
+  background-color: #172532e7;
   align-items: center;
   justify-content: center;
   color: aliceblue;
@@ -115,4 +117,25 @@ h1 > span {
   top: 5px;
   right: 10px;
   cursor: pointer;
+}
+.ocean-importance {
+  background-color: #0085ea;
+  display: flex;
+  align-items: center;
+  padding: 60px;
+  gap: 60px;
+}
+.ocean-challenges {
+  background-color: #023fb4;
+  display: flex;
+  align-items: center;
+  padding: 60px;
+  gap: 60px;
+}
+.make-difference {
+  background-color: #001d5f;
+  display: flex;
+  align-items: center;
+  padding: 60px;
+  gap: 60px;
 }
