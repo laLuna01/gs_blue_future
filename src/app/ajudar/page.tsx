@@ -4,7 +4,7 @@ import Image from "next/image";
 const Ajudar = () => {
   return (
     <>
-        <section className="about-us">
+        <section className="section-text-img">
           <div className="section-image">
               <Image src="/img6.png" alt="ocean drawing" width={600} height={500}></Image>
           </div>
@@ -13,7 +13,7 @@ const Ajudar = () => {
             <p>Os oceanos são essenciais para a vida no nosso planeta, e todos nós podemos contribuir para sua preservação. Existem muitas maneiras de ajudar, seja através de ações simples no dia a dia, participando de iniciativas locais ou apoiando organizações dedicadas à conservação marinha. Aqui estão algumas ideias de como você pode fazer a diferença e ajudar os nossos oceanos:</p>
           </div>
         </section>
-        <section className="what-we-do">
+        <section className="section-text-img">
             <div>
               <ul>
                 <li>Reduza o Uso de Plásticos</li>
@@ -54,7 +54,7 @@ const Ajudar = () => {
               </ul>
             </div>
         </section>
-        <section className="about-us">
+        <section className="section-text-img">
           <div>
             <h2>Para Onde Doar?</h2>
             <ul>

@@ -11,6 +11,10 @@
 }
 body {
   background-color: blue;
+  background-image: url("/bg9.jpeg");
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
 }
 section {
   width: 100%;
@@ -20,9 +24,9 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url("/bg6.jpeg");
+  background-image: url("/bg8.jpg");
   background-size: cover;
-  background-position: center;
+  background-position: top;
   background-repeat: no-repeat;
 }
 .title{
@@ -50,7 +54,7 @@ h1 > span {
 .login, .signup {
     display: flex;
     justify-content: flex-end;
-    background-image: url("/bg7.jpg");
+    background-image: url("/bg.jpg");
     background-size: cover;
     background-position: center;
 }
@@ -119,21 +123,7 @@ h1 > span {
   right: 10px;
   cursor: pointer;
 }
-.ocean-importance {
-  background-color: #001d5f;
-  display: flex;
-  align-items: center;
-  padding: 80px;
-  gap: 70px;
-}
-.ocean-challenges {
-  background-color: #2f5db3;
-  display: flex;
-  align-items: center;
-  padding: 80px;
-  gap: 70px;
-}
-.make-difference {
+.section-text-img {
   background-color: #001d5f;
   display: flex;
   align-items: center;
@@ -162,13 +152,6 @@ h1 > span {
 }
 .section-text > ul > li > span {
   color: #6af0d3;
-}
-.about-us {
-  display: flex;
-  background-color: #001d5f;
-  align-items: center;
-  padding: 80px;
-  gap: 70px;
 }
 .what-we-do {
   display: flex;

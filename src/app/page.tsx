@@ -9,7 +9,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="ocean-importance">
+      <section className="section-text-img">
         <div className="section-text">
           <h2>A Importância dos Oceanos</h2>
           <p>Os oceanos são a força vital do nosso planeta, cobrindo mais de 70% da superfície terrestre e sustentando uma incrível diversidade de vida. Eles regulam o clima, produzem mais de metade do oxigênio que respiramos e são uma fonte crucial de alimento e recursos econômicos.</p>
@@ -20,13 +20,13 @@ export default function Home() {
           </ul>
         </div>
         <div className="section-image">
-          <Image src="/img2.png" alt="ocean drawing" width={400} height={600}></Image>
+          <Image src="/img7.jpg" alt="ocean drawing" width={400} height={600}></Image>
         </div>
       </section>
 
-      <section className="ocean-challenges">
+      <section className="section-text-img">
         <div className="section-image">
-          <Image src="/img3.png" alt="ocean drawing" width={600} height={500}></Image>
+          <Image src="/img8.jpg" alt="ocean drawing" width={400} height={600}></Image>
         </div>
         <div className="section-text">
           <h2>Ameaças aos Nossos Oceanos</h2>
@@ -39,7 +39,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="make-difference">
+      <section className="section-text-img">
         <div className="section-text">
           <h2>Juntos Podemos Fazer a Diferença</h2>
           <p>Cada um de nós pode contribuir para a proteção e preservação dos oceanos. Através de pequenas mudanças no nosso dia a dia e da participação em iniciativas globais, podemos criar um impacto positivo.</p>
@@ -51,7 +51,7 @@ export default function Home() {
           </ul>
         </div>
         <div className="section-image">
-          <Image src="/img1.png" alt="ocean drawing" width={600} height={450}></Image>
+          <Image src="/img3.jpg" alt="ocean drawing" width={400} height={600}></Image>
         </div>
       </section>
 

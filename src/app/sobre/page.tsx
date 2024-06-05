@@ -4,7 +4,7 @@ import Image from "next/image";
 const Sobre = () => {
   return (
     <>
-        <section className="about-us">
+        <section className="section-text-img">
             <div className="section-image">
             <Image src="/img6.png" alt="ocean drawing" width={600} height={500}></Image>
             </div>
@@ -15,7 +15,7 @@ const Sobre = () => {
             <p>Estamos sempre em busca de pessoas apaixonadas que queiram fazer a diferença. Seja através do voluntariado, de doações ou da participação em nossas iniciativas, cada contribuição é valiosa. Juntos, podemos criar um futuro melhor para nossos oceanos e para o planeta.</p>
             </div>
         </section>
-        <section className="what-we-do">
+        <section className="section-text-img">
             <div className="section-text">
             <h2>O que Valorizamos</h2>
             <ul>

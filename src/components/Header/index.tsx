@@ -11,13 +11,13 @@ const Header = () => {
             </a>
             <ul className="pages">
               <li>
-                <a className="page-link" href="">Informação</a>
+                <a className="page-link" href="./informacao">Informação</a>
               </li>
               <li>
                 <a className="page-link" href="./ajudar">Ajudar</a>
               </li>
               <li>
-                <a className="page-link" href="">Posts</a>
+                <a className="page-link" href="./posts">Posts</a>
               </li>
               <li>
                 <a className="page-link" href="./sobre">Sobre</a>
