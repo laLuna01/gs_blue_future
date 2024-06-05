@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 * {
   margin: 0;
@@ -36,7 +37,7 @@ section {
 h1 {
   text-align: center;
   font-family: Merienda;
-  color: #00217a;
+  color: #0b215e;
   font-size: 60px;
   font-weight: bolder;
   line-height: 100px;
@@ -66,7 +67,7 @@ h1 > span {
   margin-bottom: 30px;
   font-size: 50px;
   color: #A9DAFC;
-  font-family: Lato;
+  font-family: Montserrat;
 }
 .form > input {
   width: 340px;
@@ -119,23 +120,42 @@ h1 > span {
   cursor: pointer;
 }
 .ocean-importance {
-  background-color: #0085ea;
+  background-color: #0679d1;
   display: flex;
   align-items: center;
-  padding: 60px;
-  gap: 60px;
+  padding: 80px;
+  gap: 70px;
 }
 .ocean-challenges {
   background-color: #023fb4;
   display: flex;
   align-items: center;
-  padding: 60px;
-  gap: 60px;
+  padding: 80px;
+  gap: 70px;
 }
 .make-difference {
   background-color: #001d5f;
   display: flex;
   align-items: center;
-  padding: 60px;
-  gap: 60px;
+  padding: 80px;
+  gap: 70px;
+}
+.section-text {
+  color: aliceblue;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  line-height: 25px;
+}
+.section-text > h2 {
+  color: #8fe7a9;
+  font-size: 50px;
+  font-family: Montserrat;
+  line-height: normal;
+}
+.section-text > ul > li {
+  list-style: inside;
+}
+.section-text > ul > li > span {
+  color: #6af0d3;
 }
