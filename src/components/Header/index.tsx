@@ -20,7 +20,7 @@ const Header = () => {
                 <a className="page-link" href="">Posts</a>
               </li>
               <li>
-                <a className="page-link" href="">Sobre</a>
+                <a className="page-link" href="./sobre">Sobre</a>
               </li>
             </ul>
             <a href="./login">

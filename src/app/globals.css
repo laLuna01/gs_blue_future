@@ -120,14 +120,14 @@ h1 > span {
   cursor: pointer;
 }
 .ocean-importance {
-  background-color: #0679d1;
+  background-color: #001d5f;
   display: flex;
   align-items: center;
   padding: 80px;
   gap: 70px;
 }
 .ocean-challenges {
-  background-color: #023fb4;
+  background-color: #2f5db3;
   display: flex;
   align-items: center;
   padding: 80px;
@@ -140,12 +140,16 @@ h1 > span {
   padding: 80px;
   gap: 70px;
 }
+.section-image {
+  display: flex;
+}
 .section-text {
   color: aliceblue;
   display: flex;
   flex-direction: column;
   gap: 30px;
   line-height: 25px;
+  justify-content: center;
 }
 .section-text > h2 {
   color: #8fe7a9;
@@ -158,4 +162,19 @@ h1 > span {
 }
 .section-text > ul > li > span {
   color: #6af0d3;
+}
+.about-us {
+  display: flex;
+  background-color: #001d5f;
+  align-items: center;
+  padding: 80px;
+  gap: 70px;
+}
+.what-we-do {
+  display: flex;
+  background-color: #2f5db3;
+  padding-left: 80px;
+}
+.what-we-do > div > img {
+  align-self: flex-end;
 }
