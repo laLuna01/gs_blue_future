@@ -20,13 +20,13 @@ export default function Home() {
           </ul>
         </div>
         <div className="section-image">
-          <Image src="/img7.jpg" alt="ocean drawing" width={400} height={600}></Image>
+          <Image src="/img7.jpg" alt="ocean drawing" width={400} height={500}></Image>
         </div>
       </section>
 
       <section className="section-text-img different">
         <div className="section-image">
-          <Image src="/img8.jpg" alt="ocean drawing" width={400} height={600}></Image>
+          <Image src="/img8.jpg" alt="ocean drawing" width={400} height={500}></Image>
         </div>
         <div className="section-text">
           <h2>Ameaças aos Nossos Oceanos</h2>
@@ -51,7 +51,7 @@ export default function Home() {
           </ul>
         </div>
         <div className="section-image">
-          <Image src="/img3.jpg" alt="ocean drawing" width={400} height={600}></Image>
+          <Image src="/img3.jpg" alt="ocean drawing" width={400} height={500}></Image>
         </div>
       </section>
 

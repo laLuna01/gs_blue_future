@@ -15,9 +15,6 @@ body {
 main {
   background-color: #022029;
 }
-.different {
-  background-color: #0c4e63;
-}
 section {
   width: 100%;
   min-height: 100vh;
@@ -170,7 +167,8 @@ h1 {
 }
 .about {
   margin: 0 40px 70px 40px;
-  background-color: #bcdaeb4d;
+  background-color: #bcdaeb5d;
+  backdrop-filter: blur(3px);
   border-radius: 20px;
   border-top: white 2px solid;  
   border-bottom: white 2px solid;
@@ -207,6 +205,7 @@ h1 {
 }
 .we-do-card {
   border: #0c4e63 2px solid;
+  background-color: rgba(240, 248, 255, 0.253);
   border-radius: 20px;
   padding: 20px;
   width: 300px;
@@ -216,4 +215,58 @@ h1 {
 }
 .we-do-card > h3 {
   color: #144b5c;
+}
+.help-hero {
+  background-image: url("/bg9.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.help-hero > div > img {
+  margin-top: 50px;
+}
+.help {
+  background-color: #003545;
+  padding: 60px 80px;
+}
+.help > div > h2 {
+  color: #8fe7a9;
+  font-size: 50px;
+  font-family: Montserrat;
+  line-height: normal;
+  margin-bottom: 20px;
+}
+.donate > li {
+  list-style: circle;
+  color: white;
+  font-size: 18px;
+  line-height: 28px;
+}
+.donate > li > a:visited {
+  color: white;
+}
+.donate > li > a:hover {
+  border-bottom: white 1px solid;
+}
+.different {
+  background-color: #0c4e63;
+}
+.how-to-help {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.how-to-help > li {
+  color: #8fe7a9;
+  list-style: square;
+  font-size: 22px;
+  padding-bottom: 4px;
+  border-bottom: white 1px solid;
+}
+.how-to-help > ul > li {
+  color: white;
+  list-style: inside;
+  line-height: 28px;
+}
+.how-to-help > ul > li > span {
+  color: chartreuse;
 }
