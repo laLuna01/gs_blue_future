@@ -24,7 +24,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="section-text-img">
+      <section className="section-text-img different">
         <div className="section-image">
           <Image src="/img8.jpg" alt="ocean drawing" width={400} height={600}></Image>
         </div>
