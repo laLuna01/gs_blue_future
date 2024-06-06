@@ -40,7 +40,7 @@ const Logado = () => {
 
     if (carregando) {
         console.log(carregando + " bah")
-        return <p>Carregando...</p>;
+        return <p className="loading">Carregando...</p>;
     } else {
 
     return <section className="logado">
