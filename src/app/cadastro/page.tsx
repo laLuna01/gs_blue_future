@@ -7,15 +7,15 @@ const Cadastro = () => {
   const [mensagem, setMensagem] = useState<string>("");
 
   const [nome, setNome] = useState("");
-  const [user, setUser] = useState("");
+  const [usuario, setUsuario] = useState("");
   const [email, setEmail] = useState("");
   const [senha, setSenha] = useState("");
 
   const changeNome = (event: any) => {
     setNome(event.target.value);
   };
-  const changeUser = (event: any) => {
-    setUser(event.target.value);
+  const changeUsuario = (event: any) => {
+    setUsuario(event.target.value);
   };
   const changeEmail = (event: any) => {
     setEmail(event.target.value);
@@ -28,17 +28,18 @@ const Cadastro = () => {
   myHeaders.append("Content-Type", "application/json");
 
   const enviarDados = async (event: any) => {
+    event.preventDefault();
 
     const dados = {
       nome,
-      user,
+      usuario,
       email,
       senha,
     };
     console.log(JSON.stringify(dados))
 
     try {
-      const response = await fetch("http://localhost:8080/cliente", {
+      const response = await fetch("http://localhost:8080/usuario", {
         method: "POST",
         headers: myHeaders,
         body: JSON.stringify(dados),
@@ -77,7 +78,7 @@ const Cadastro = () => {
       <form className="form">
         <h2>Cadastro</h2>
         <input value={nome} onChange={changeNome} type="text" placeholder="Nome completo" required />
-        <input value={user} onChange={changeUser} type="text" placeholder="Nome de Usuário" required />
+        <input value={usuario} onChange={changeUsuario} type="text" placeholder="Nome de Usuário" required />
         <input value={email} onChange={changeEmail} type="email" placeholder="E-mail" required />
         <input value={senha} onChange={changeSenha} type="password" placeholder="Senha" required />
         <button type="submit" onClick={enviarDados}>Cadastrar</button>

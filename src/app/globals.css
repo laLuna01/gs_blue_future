@@ -10,7 +10,7 @@
   box-sizing: border-box;
 }
 body {
-  background-color: blue;
+  background-color: rgb(37, 53, 97);
   background-image: url("/bg9.jpeg");
   background-size: cover;
   background-position: bottom;
@@ -110,7 +110,7 @@ h1 {
 .alert {
   position: relative;
   padding: 15px;
-  background-color: rgb(0, 0, 156);
+  background-color: rgb(58, 69, 102);
   border: 1px solid white;
   color: white;
   border-radius: 5px;
@@ -118,7 +118,7 @@ h1 {
   padding: 30px;
 }
 .alert > p {
-  color: var(--cor15);
+  color: white;
 }
 .close-btn {
   position: absolute;
@@ -156,11 +156,8 @@ h1 {
   color: #6af0d3;
   font-size: large;
 }
-.what-we-do {
-  display: flex;
-  background-color: #2f5db3;
-  padding-left: 80px;
-}
-.what-we-do > div > img {
-  align-self: flex-end;
+.about-us {
+  background-image: url("/img6.jpg");
+  background-size: cover;
+  background-position: top;
 }

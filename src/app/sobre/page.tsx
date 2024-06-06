@@ -4,7 +4,7 @@ import Image from "next/image";
 const Sobre = () => {
   return (
     <>
-        <section className="section-text-img">
+        <section className="about-us">
             <div className="section-image">
             <Image src="/img6.png" alt="ocean drawing" width={600} height={500}></Image>
             </div>
