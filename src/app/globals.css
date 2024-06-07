@@ -103,7 +103,8 @@ h1 {
 .alert {
   position: relative;
   padding: 15px;
-  background-color: rgb(58, 69, 102);
+  background-color: rgba(26, 43, 95, 0.534);
+  backdrop-filter: blur(3px);
   border: 1px solid white;
   color: white;
   border-radius: 5px;
