@@ -6,8 +6,14 @@ const OpenPost = (props: Props) => {
     <div className="open-post">
         <h3>{props.titulo}</h3>
         <p>{props.descricao}</p>
-        <p>{props.autor}</p>
-        <p>{props.data}</p>
+        <img src={props.image} alt="img" />
+        <div className="autor-data">
+            <p>{"Publicado por: " + props.autor}</p>
+            <p>{props.data}</p>
+        </div>
+        <div className="sair">
+            <button><a href="./posts">Voltar</a></button>
+        </div>
     </div>
   )
 };

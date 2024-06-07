@@ -538,6 +538,30 @@ header {
   color: #ffffff;
   border: #000a1f 1px solid;
 }
+.open-post {
+  margin: 10px;
+  background-color: aliceblue;
+  border-radius: 20px;
+  padding: 50px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.open-post > h3 {
+  color: #031544;
+  font-size: 40px;
+}
+.open-post > p {
+  line-height: 28px;
+  font-size: 18px;
+}
+.autor-data {
+  line-height: 28px;
+}
+.autor-data > p:first-child {
+  font-weight: 600;
+  color: rgb(6, 7, 78);
+}
 @media screen and (max-width: 1155px) {
   .section-text-img {
     flex-direction: column;
@@ -605,6 +629,9 @@ header {
   }
 }
 @media screen and (max-width: 525px) {
+  .open-post > h3 {
+    font-size: 35px;
+  }
   .form {
     width: 100%;
   }

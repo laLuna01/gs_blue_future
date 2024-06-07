@@ -4,6 +4,7 @@ interface Props {
     autor: string;
     data: string;
     denuncia: boolean;
+    image: string;
 }
     
 export type {Props};

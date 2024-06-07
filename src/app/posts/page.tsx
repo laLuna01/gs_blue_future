@@ -57,9 +57,11 @@ export default function Posts() {
     return <p className="loading">Carregando...</p>;
   } else if (aberta) {
     console.log(publicacaoAberta)
-    return <div>
-      <OpenPost titulo={publicacaoAberta.titulo} descricao={publicacaoAberta.descricao} autor={publicacaoAberta.autor} data={publicacaoAberta.dataPublicacao} denuncia={publicacaoAberta.denuncia}></OpenPost>
-    </div>
+    return <section className="posts-page">
+      <div>
+        <OpenPost titulo={publicacaoAberta.titulo} descricao={publicacaoAberta.descricao} autor={publicacaoAberta.autor} data={publicacaoAberta.dataPublicacao} denuncia={publicacaoAberta.denuncia} image={publicacaoAberta.urlImage}></OpenPost>
+      </div>
+    </section>
   } else {
     return (
       <section className="posts-page">
