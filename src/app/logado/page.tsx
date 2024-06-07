@@ -7,8 +7,8 @@ const Logado = () => {
     const ano = dataAtual.getFullYear().toString().slice(-2);
     const mes = (dataAtual.getMonth() + 1).toString().padStart(2, '0');
     const dia = dataAtual.getDate().toString().padStart(2, '0');
-    const data_publicacao = `${dia}/${mes}/${ano}`;
-    console.log(data_publicacao);
+    const dataPublicacao = `${dia}/${mes}/${ano}`;
+    console.log(dataPublicacao);
     
     const [mostrarAviso, setMostrarAviso] = useState(false);
     const [mensagem, setMensagem] = useState<string>("");
@@ -23,10 +23,10 @@ const Logado = () => {
 
     const [titulo, setTitulo] = useState("")
     const [descricao, setDescricao] = useState("")
-    const [url_image, setUrlImage] = useState("")
-    const [is_denuncia, setIsDenuncia] = useState("")
-    const [id_usuario, setIdUsuario] = useState(0)
-    const [id_endereco, setIdEndereco] = useState(1)
+    const [urlImage, setUrlImage] = useState("")
+    const [denuncia, setIsDenuncia] = useState("")
+    const [idUsuario, setIdUsuario] = useState(0)
+    const [idEndereco, setIdEndereco] = useState(1)
 
     const changeTitulo = (event: any)=> {
         setTitulo(event.target.value)
@@ -78,11 +78,11 @@ const Logado = () => {
         const dados = {
             titulo,
             descricao,
-            url_image,
-            is_denuncia: Boolean(is_denuncia),
-            id_usuario,
-            id_endereco,
-            data_publicacao
+            urlImage,
+            denuncia: Boolean(denuncia),
+            idUsuario,
+            idEndereco,
+            dataPublicacao
         };
         console.log(JSON.stringify(dados))
 
@@ -133,7 +133,7 @@ const Logado = () => {
                 <form className="write">
                     <input value={titulo} onChange={changeTitulo} type="text" placeholder="Título" required />
                     <textarea value={descricao} onChange={changeDescricao} placeholder="Descricão" required />
-                    <input value={url_image} onChange={changeUrlImage} type="text" placeholder="Link imagem" required />
+                    <input value={urlImage} onChange={changeUrlImage} type="text" placeholder="Link imagem" required />
                     <div className="checkbox">
                         <p>Isto é uma denúncia?</p>
                         <div>
