@@ -150,7 +150,7 @@ h1 {
   font-size: large;
 }
 .loading {
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   text-align: center;
   justify-items: center;
@@ -340,4 +340,125 @@ footer {
 }
 .student > p {
   color: white;
+}
+.posts {
+  background-image: url("/bg3.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  padding: 20px 40px;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar > a {
+  height: 50px;
+}
+.pages {
+  display: flex;
+  gap: 40px;
+}
+.pages > li {
+  display: flex;
+  flex-direction: column;
+}
+.page-link {
+  font-size: 20px;
+  color: #FFFFFF;
+  font-weight: 600;
+  position: relative;
+  padding: 0 4px;
+  font-family: Lato;
+}
+.page-link:after {
+  content: "";
+  position: absolute;
+  background-image: radial-gradient(#0961A3, white);
+  height: 3px;
+  width: 0;
+  bottom: -9px;
+  left: 0;
+  transition: 0.3s;
+}
+.page-link:hover {
+  color: #DCE7ED;
+}
+.page-link:hover:after {
+  width: 100%;
+}
+.logado {
+  padding: 100px 50px 50px 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  color: #040f25;
+}
+.page {
+  background-color: aliceblue;
+  border-radius: 20px;
+  padding: 50px 40px;
+}
+.page > h2 {
+  font-size: 30px;
+  margin-bottom: 30px;
+  color: #092664;
+}
+.write {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.write > input, .write > textarea {
+  width: 100%;
+  height: 40px;
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-size: 17px;
+  border: 1px solid #03315a;
+}
+.write > textarea {
+  height: 200px;
+}
+.checkbox {
+  display: flex;
+  gap: 20px;
+  font-size: 18px;
+}
+.checkbox > p {
+  font-weight: 600;
+}
+.checkbox-item {
+  display: flex;
+  gap: 7px;
+}
+.publish {
+  width: 200px;
+  height: 45px;
+  border-radius: 15px;
+  font-size: 17px;
+  background-color: #03315a;
+  color: #ffffff;
+  border: #000a1f 1px solid;
+  font-weight: 600;
+}
+.sair {
+  align-self: flex-end;
+}
+.sair > button {
+  width: 150px;
+  height: 50px;
+  border-radius: 15px;
+  font-size: 19px;
+  font-weight: 600;
+}
+.sair > button > a {
+  color: #001222;
 }
