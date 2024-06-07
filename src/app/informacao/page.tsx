@@ -30,13 +30,13 @@ const Informacao = () => {
           </div>
         </div>
         <div>
-          <Image className="img-small" src="/drawing1.png" alt="drawing" width={400} height={400}></Image>
+          <Image className="img-small" src="/drawing1.png" alt="desenho" width={400} height={400}></Image>
         </div>
       </section>
     
       <section className="section-text-img diff">
         <div>
-          <Image className="img-small" src="/drawing2.png" alt="drawing" width={400} height={400}></Image>
+          <Image className="img-small" src="/drawing2.png" alt="desenho" width={400} height={400}></Image>
         </div>
         <div className="data left">
           <div>
@@ -74,7 +74,7 @@ const Informacao = () => {
           </div>
         </div>
         <div>
-          <Image className="img-small" src="/drawing.png" alt="drawing" width={400} height={400}></Image>
+          <Image className="img-small" src="/drawing.png" alt="desenho" width={400} height={400}></Image>
         </div>
       </section>
     </>

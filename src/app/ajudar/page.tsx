@@ -10,7 +10,7 @@ const Ajudar = () => {
             <p>Os oceanos são essenciais para a vida no nosso planeta, e todos nós podemos contribuir para sua preservação. Existem muitas maneiras de ajudar, seja através de ações simples no dia a dia, participando de iniciativas locais ou apoiando organizações dedicadas à conservação marinha. Aqui estão algumas ideias de como você pode fazer a diferença e ajudar os nossos oceanos:</p>
           </div>
             <div className="section-image">
-              <Image className="img-small" src="/img.svg" alt="ocean drawing" width={450} height={450}></Image>
+              <Image className="img-small" src="/img.svg" alt="desenho de agua poluida" width={450} height={450}></Image>
             </div>
         </section>
         <section className="section-text-img help">
@@ -34,12 +34,12 @@ const Ajudar = () => {
               </ul>
             </div>
             <div className="section-image">
-              <Image className="img-small" src="/img10.jpg" alt="ocean drawing" width={400} height={500}></Image>
+              <Image className="img-small" src="/img10.jpg" alt="foto de voluntarios" width={400} height={500}></Image>
             </div>
         </section>
         <section className="section-text-img help different">
             <div className="section-image">
-              <Image className="img-small" src="/img9.jpg" alt="ocean drawing" width={500} height={500}></Image>
+              <Image className="img-small" src="/img9.jpg" alt="foto de voluntarios" width={500} height={500}></Image>
             </div>
             <div>
               <ul className="how-to-help">
@@ -74,7 +74,7 @@ const Ajudar = () => {
             </ul>
           </div>
           <div className="section-image">
-              <Image className="img-small" src="/img2.jpeg" alt="ocean drawing" width={400} height={500}></Image>
+              <Image className="img-small" src="/img2.jpeg" alt="homem ajudando tartaruga" width={400} height={500}></Image>
           </div>
         </section>
     </>

@@ -30,7 +30,7 @@ const Header = () => {
               </li>
             </ul>
             <a className="login-icon" href="./login">
-                <Image src="/user.svg" alt="Login" width={45} height={50}></Image>
+                <Image src="/user.svg" alt="Login icone" width={45} height={50}></Image>
             </a>
             <button className="menu-hamburger" onClick={toggleMenu}></button>
             {isMenuOpen && (
@@ -50,7 +50,7 @@ const Header = () => {
                   </li>
                 </ul>
                 <a className="login-dropdown" href="./login">
-                  <Image src="/user.svg" alt="Login" width={45} height={50}></Image>
+                  <Image src="/user.svg" alt="Login icone" width={45} height={50}></Image>
                   <p>Login</p>
                 </a>
               </div>
