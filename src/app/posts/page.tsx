@@ -59,7 +59,7 @@ export default function Posts() {
     console.log(publicacaoAberta)
     return <section className="posts-page">
       <div>
-        <OpenPost titulo={publicacaoAberta.titulo} descricao={publicacaoAberta.descricao} autor={publicacaoAberta.autor} data={publicacaoAberta.dataPublicacao} denuncia={publicacaoAberta.denuncia} image={publicacaoAberta.urlImage}></OpenPost>
+        <OpenPost titulo={publicacaoAberta.titulo} descricao={publicacaoAberta.descricao} autor={publicacaoAberta.autor.value} data={publicacaoAberta.dataPublicacao} denuncia={publicacaoAberta.denuncia} image={publicacaoAberta.urlImage} idEndereco={publicacaoAberta.idEndereco}></OpenPost>
       </div>
     </section>
   } else {
@@ -77,6 +77,7 @@ export default function Posts() {
         )}
         <div className="posts">
           {publicacoes.map((publicacao, index) => {
+            console.log(publicacao)
             return (
               <div onClick={() => verPublicacao(index)} key={publicacao.id}>
                 <Post titulo={publicacao.titulo} autor={publicacao.autor} data={publicacao.dataPublicacao} denuncia={publicacao.denuncia}></Post>

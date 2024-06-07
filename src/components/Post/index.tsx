@@ -3,7 +3,7 @@ import { Props } from "./interface";
 
 const Post = (props: Props) => {
   return (
-    <div className="post">
+    <div className={`post ${props.denuncia ? "denuncia" : ""}`}>
         <h3>{props.titulo}</h3>
         <div>
           <div>

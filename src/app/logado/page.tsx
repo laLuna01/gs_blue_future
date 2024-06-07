@@ -8,7 +8,6 @@ const Logado = () => {
     const mes = (dataAtual.getMonth() + 1).toString().padStart(2, '0');
     const dia = dataAtual.getDate().toString().padStart(2, '0');
     const dataPublicacao = `${dia}/${mes}/${ano}`;
-    console.log(dataPublicacao);
     
     const [mostrarAviso, setMostrarAviso] = useState(false);
     const [mensagem, setMensagem] = useState<string>("");
@@ -24,9 +23,11 @@ const Logado = () => {
     const [titulo, setTitulo] = useState("")
     const [descricao, setDescricao] = useState("")
     const [urlImage, setUrlImage] = useState("")
-    const [denuncia, setIsDenuncia] = useState("")
+    const [denuncia, setIsDenuncia] = useState("false")
+    const [cepInput, setCep] = useState("")
     const [idUsuario, setIdUsuario] = useState(0)
-    const [idEndereco, setIdEndereco] = useState(1)
+    let idEndereco = 0
+    const [mostrarCep, setMostrarCep] = useState(false);
 
     const changeTitulo = (event: any)=> {
         setTitulo(event.target.value)
@@ -39,6 +40,14 @@ const Logado = () => {
     }
     const changeDenuncia = (event: any)=> {
         setIsDenuncia(event.target.value)
+        if (event.target.value === "true") {
+            setMostrarCep(true)
+        } else {
+            setMostrarCep(false)
+        }
+    }
+    const changeCep = (event: any)=> {
+        setCep(event.target.value)
     }
 
     const pegarInformacao = useCallback(async () => {
@@ -75,18 +84,68 @@ const Logado = () => {
     const enviarDados = async (event: any) => {
         event.preventDefault();
 
-        const dados = {
-            titulo,
-            descricao,
-            urlImage,
-            denuncia: Boolean(denuncia),
-            idUsuario,
-            idEndereco,
-            dataPublicacao
-        };
-        console.log(JSON.stringify(dados))
-
         try {
+            if (cepInput != null) {
+                try {
+                    const responseCep = await fetch("http://localhost:8080/endereco/cep/" + cepInput);
+                    const resultCep = await responseCep.json();
+                    console.log(resultCep)
+                    const cep: string = resultCep.cep;
+                    const logradouro: string = resultCep.logradouro;
+                    const complemento: string = resultCep.complemento;
+                    const bairro: string = resultCep.bairro;
+                    const localidade: string = resultCep.localidade;
+                    const uf: string = resultCep.uf;
+    
+                    const endereco = {
+                        cep,
+                        logradouro,
+                        complemento,
+                        bairro,
+                        localidade,
+                        uf
+                    };
+    
+                    try {
+                        const response1 = await fetch("http://localhost:8080/endereco", {
+                            method: "POST",
+                            headers: myHeaders,
+                            body: JSON.stringify(endereco)
+                        });
+                    } catch (error) {
+                        console.error("Erro ao enviar dados:", error);
+                        setMostrarAviso(true);
+                        setMensagem("Falha na conexão");
+                    }
+    
+                    try {
+                        const responseEndereco = await fetch("http://localhost:8080/endereco/cep/" + cep);
+                        console.log(cep)
+                        const resultEndereco = await responseEndereco.json();
+                        idEndereco = resultEndereco.id
+                        console.log(resultCep)
+                        console.log(idEndereco)
+                        console.log(resultEndereco.id)
+                    } catch (error) {
+                        console.error("Erro ao pegar endereço:", error);
+                    }  
+          
+                } catch (error) {
+                    console.error("Erro ao pegar endereço:", error);
+                }
+            }
+    
+            const dados = {
+                titulo,
+                descricao,
+                urlImage,
+                denuncia: Boolean(denuncia),
+                idUsuario,
+                idEndereco,
+                dataPublicacao
+            };
+            console.log(JSON.stringify(dados))
+
             const response = await fetch("http://localhost:8080/publicacao", {
                 method: "POST",
                 headers: myHeaders,
@@ -95,7 +154,7 @@ const Logado = () => {
 
             if (response.statusText === "Created") {
                 setMostrarAviso(true);
-                setMensagem("Post enviando");
+                setMensagem("Post enviado");
             } else {
                 setMostrarAviso(true);
                 setMensagem("Ocorreu um erro");
@@ -142,11 +201,14 @@ const Logado = () => {
                                 <label htmlFor="denuncia">Sim</label>
                             </div>
                             <div className="checkbox-item">
-                                <input value="false" onChange={changeDenuncia} type="radio" name="nao_denuncia" id="denuncia" required />
+                                <input value="false" onChange={changeDenuncia} type="radio" name="denuncia" id="nao_denuncia" required />
                                 <label htmlFor="nao_denuncia">Não</label>
                             </div>
                         </div>
                     </div>
+                    {mostrarCep &&
+                        <input value={cepInput} onChange={changeCep} type="text" placeholder="CEP" required></input>
+                    }
                     <button className="publish" type="submit" onClick={enviarDados}>Publicar</button>
                 </form>
             </div>

@@ -89,7 +89,7 @@ export default function Login() {
             <h2>Login</h2>
             <input value={email} onChange={changeEmail} id="email" type="email" placeholder="E-mail" required />
             <input value={senha} onChange={changeSenha} id="senha" type="password" placeholder="Senha" required />
-            <button type="submit" onClick={verificarLogin}>Cadastrar</button>
+            <button type="submit" onClick={verificarLogin}>Logar</button>
             <p>Ainda não é cadastrado? <a href="./cadastro">Criar conta</a></p>
         </form>
     </section>

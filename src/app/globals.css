@@ -515,6 +515,9 @@ header {
   flex-direction: column;
   justify-content: space-between;
 }
+.denuncia {
+  background-color: #eba2a271;
+}
 .post > h3 {
   color: #031544;
   font-size: 21px;
@@ -551,6 +554,9 @@ header {
   color: #031544;
   font-size: 40px;
 }
+.open-denuncia > h3 {
+  color: rgb(170, 8, 8);
+}
 .open-post > p {
   line-height: 28px;
   font-size: 18px;
@@ -561,6 +567,9 @@ header {
 .autor-data > p:first-child {
   font-weight: 600;
   color: rgb(6, 7, 78);
+}
+.open-denuncia > .autor-data > p:first-child {
+  color: rgb(104, 7, 7);
 }
 @media screen and (max-width: 1155px) {
   .section-text-img {

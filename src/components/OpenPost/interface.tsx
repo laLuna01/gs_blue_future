@@ -5,6 +5,7 @@ interface Props {
     data: string;
     denuncia: boolean;
     image: string;
+    idEndereco: string;
 }
     
 export type {Props};
