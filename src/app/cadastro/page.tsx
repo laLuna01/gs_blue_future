@@ -47,7 +47,7 @@ const Cadastro = () => {
 
       if (response.statusText === "Created") {
         setMostrarAviso(true);
-        setMensagem("Post enviado");
+        setMensagem("Usuario cadastrado");
       } else {
         setMostrarAviso(true);
         setMensagem("Ocorreu um erro");
