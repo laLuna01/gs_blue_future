@@ -26,11 +26,6 @@ const Ajudar = () => {
                   <li><span>Eventos Locais:</span> Junte-se a grupos comunitários e participe de eventos de limpeza de praias. Esses eventos ajudam a remover lixo e detritos que podem prejudicar a vida marinha.</li>
                   <li><span>Organize Sua Própria Limpeza:</span> Se não houver eventos em sua área, organize uma limpeza de praia com amigos e familiares.</li>
                 </ul>
-                <li>Apoie Políticas e Organizações de Conservação</li>
-                <ul>
-                  <li><span>Doe para Organizações de Conservação:</span> Apoie financeiramente organizações que trabalham para proteger os oceanos e a vida marinha.</li>
-                  <li><span>Assine Petições:</span> Participe de campanhas e assine petições que visam a implementação de políticas de conservação marinha.</li>
-                </ul>
                 <li>Consuma Produtos do Mar de Forma Sustentável</li>
                 <ul>
                   <li><span>Escolha Produtos Sustentáveis:</span> Compre peixes e frutos do mar de fontes sustentáveis, certificadas por organizações como o Marine Stewardship Council (MSC).</li>
@@ -51,7 +46,7 @@ const Ajudar = () => {
                 <li>Reduza a Pegada de Carbono</li>
                 <ul>
                   <li><span>Opte por Transportes Sustentáveis:</span> Use bicicletas, transporte público ou caronas para reduzir as emissões de carbono.</li>
-                  <li><span>Economize Energia:</span> Reduza o consumo de energia em casa, utilizando lâmpadas LED, eletrodomésticos eficientes e desligando dispositivos eletrônicos quando não estiverem em uso.</li>
+                  <li><span>Economize Energia:</span> Reduza o consumo de energia, utilize lâmpadas e eletrodomésticos eficientes, e desligue o que não usa.</li>
                 </ul>
                 <li>Eduque e Conscientize</li>
                 <ul>
