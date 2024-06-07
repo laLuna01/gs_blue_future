@@ -250,6 +250,9 @@ h1 {
 .different {
   background-color: #0c4e63;
 }
+.help-big {
+  width: 100%;
+}
 .how-to-help {
   display: flex;
   flex-direction: column;
@@ -297,6 +300,7 @@ h1 {
   text-align: center;
   max-width: 800px;
   margin: auto;
+  padding: 0 40px;
 }
 .info-hero > h2 {
   color: #5ed1da;
@@ -340,12 +344,6 @@ footer {
 }
 .student > p {
   color: white;
-}
-.posts {
-  background-image: url("/bg3.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
 }
 header {
   position: absolute;
@@ -429,8 +427,13 @@ header {
 }
 .checkbox {
   display: flex;
+  flex-direction: column;
   gap: 20px;
   font-size: 18px;
+}
+.checkbox > div {
+  display: flex;
+  gap: 20px;
 }
 .checkbox > p {
   font-weight: 600;
@@ -461,4 +464,146 @@ header {
 }
 .sair > button > a {
   color: #001222;
+}
+.menu-hamburger {
+  border: none;
+  background: none;
+  border-top: 4px solid white;
+  cursor: pointer;
+  display: none;
+}
+.menu-hamburger::before, .menu-hamburger::after {
+  content: " ";
+  display: block;
+  width: 30px;
+  height: 4px;
+  background: white;
+  margin-top: 6px;
+}
+.menu-dropdown {
+  display: none;
+}
+.login-dropdown {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.login-dropdown > p {
+  font-size: 20px;
+  color: white;
+}
+@media screen and (max-width: 1155px) {
+  .section-text-img {
+    flex-direction: column;
+  }
+  .right {
+    padding-right: 0;
+    border: none;
+  }
+  .left {
+    padding-left: 0;
+    border: none;
+  }
+  .section-text-img {
+    padding: 80px 80px;
+  }
+  .different, .diff {
+    flex-direction: column-reverse;
+  }
+  .help-hero {
+    padding-top: 120px;
+  }
+  .info-hero {
+    width: auto;
+  }
+}
+@media screen and (max-width: 715px) {
+  .about {
+    margin: 0 20px 60px 20px;
+    padding: 40px 20px 60px 20px;
+  }
+  .login-icon, .pages {
+    display: none;
+  }
+  .menu-hamburger {
+    display: block;
+  }
+  .menu-dropdown {
+    width: 250px;
+    height: 320px;
+    flex-direction: column;
+    display: flex;
+    position: fixed;
+    right: 5px;
+    top: 95px;
+    padding-top: 10px;
+    background-color: rgb(25, 25, 82);
+    justify-content: space-between;
+    border-radius: 20px;
+  }
+  .pages-dropdown > li {
+    font-size: 20px;
+    width: 100%;
+    padding: 15px;
+    padding-left: 30px;
+  }
+  .pages-dropdown > li:hover {
+    background-color: rgb(31, 52, 109);
+  }
+  .login-dropdown {
+    padding: 15px;
+    padding-left: 25px;
+  }
+  .page-link:hover:after {
+    width: 0;
+  }
+}
+@media screen and (max-width: 525px) {
+  .form {
+    width: 100%;
+  }
+  .about {
+    margin: 0 0 60px 0;
+    padding: 40px 20px 60px 20px;
+  }
+  .help > div > h2 {
+    font-size: 40px;
+  }
+}
+@media screen and (max-width: 490px) {
+  .about-us {
+    padding: 100px 0 80px 0;
+  }
+  .form > input {
+    width: 280px;
+  }
+  .info-hero {
+    padding-top: 70px;
+  }
+  h1 {
+    font-size: 50px;
+  }
+  .section-text > h2 {
+    font-size: 38px;
+  }
+  .section-text-img {
+    padding: 80px 50px;
+  }
+  .info-hero > h2 {
+    font-size: 50px;
+  }
+  .img-small {
+    width: 100vw;
+  }
+  .help-hero {
+    padding-top: 120px;
+  }
+  .logado {
+    padding: 100px 20px 50px 20px;
+  }
+}
+@media screen and (max-width: 410px) {
+  .img-small {
+    padding: 20px 0;
+  }
 }

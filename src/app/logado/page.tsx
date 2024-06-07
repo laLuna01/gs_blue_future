@@ -3,6 +3,13 @@ import React from "react";
 import { useState, useEffect, useRef, useCallback } from "react";
 
 const Logado = () => {
+    const dataAtual = new Date();
+    const ano = dataAtual.getFullYear().toString().slice(-2);
+    const mes = (dataAtual.getMonth() + 1).toString().padStart(2, '0');
+    const dia = dataAtual.getDate().toString().padStart(2, '0');
+    const data_publicacao = `${dia}/${mes}/${ano}`;
+    console.log(data_publicacao);
+    
     const [mostrarAviso, setMostrarAviso] = useState(false);
     const [mensagem, setMensagem] = useState<string>("");
     
@@ -20,7 +27,6 @@ const Logado = () => {
     const [is_denuncia, setIsDenuncia] = useState("")
     const [id_usuario, setIdUsuario] = useState(0)
     const [id_endereco, setIdEndereco] = useState(1)
-    const [data_publicacao, setDataPublicacao] = useState("")
 
     const changeTitulo = (event: any)=> {
         setTitulo(event.target.value)
@@ -130,13 +136,15 @@ const Logado = () => {
                     <input value={url_image} onChange={changeUrlImage} type="text" placeholder="Link imagem" required />
                     <div className="checkbox">
                         <p>Isto é uma denúncia?</p>
-                        <div className="checkbox-item">
-                            <input value="true" onChange={changeDenuncia} type="radio" name="denuncia" id="denuncia" required />
-                            <label htmlFor="denuncia">Sim</label>
-                        </div>
-                        <div className="checkbox-item">
-                            <input value="false" onChange={changeDenuncia} type="radio" name="nao_denuncia" id="denuncia" required />
-                            <label htmlFor="nao_denuncia">Não</label>
+                        <div>
+                            <div className="checkbox-item">
+                                <input value="true" onChange={changeDenuncia} type="radio" name="denuncia" id="denuncia" required />
+                                <label htmlFor="denuncia">Sim</label>
+                            </div>
+                            <div className="checkbox-item">
+                                <input value="false" onChange={changeDenuncia} type="radio" name="nao_denuncia" id="denuncia" required />
+                                <label htmlFor="nao_denuncia">Não</label>
+                            </div>
                         </div>
                     </div>
                     <button className="publish" type="submit" onClick={enviarDados}>Publicar</button>
