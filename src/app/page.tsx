@@ -10,7 +10,7 @@ export default function Home() {
       </section>
 
       <section className="section-text-img">
-        <div className="section-text">
+        <div className="section-text right">
           <h2>A Importância dos Oceanos</h2>
           <p>Os oceanos são a força vital do nosso planeta, cobrindo mais de 70% da superfície terrestre e sustentando uma incrível diversidade de vida. Eles regulam o clima, produzem mais de metade do oxigênio que respiramos e são uma fonte crucial de alimento e recursos econômicos.</p>
           <ul>
@@ -28,7 +28,7 @@ export default function Home() {
         <div className="section-image">
           <Image src="/img8.jpg" alt="ocean drawing" width={400} height={500}></Image>
         </div>
-        <div className="section-text">
+        <div className="section-text left">
           <h2>Ameaças aos Nossos Oceanos</h2>
           <p>Infelizmente, nossos oceanos estão sob grave ameaça devido a uma série de problemas ambientais. É vital que todos nós entendamos esses desafios para podermos agir e fazer a diferença.</p>
           <ul>
@@ -40,7 +40,7 @@ export default function Home() {
       </section>
 
       <section className="section-text-img">
-        <div className="section-text">
+        <div className="section-text right">
           <h2>Juntos Podemos Fazer a Diferença</h2>
           <p>Cada um de nós pode contribuir para a proteção e preservação dos oceanos. Através de pequenas mudanças no nosso dia a dia e da participação em iniciativas globais, podemos criar um impacto positivo.</p>
           <ul>
