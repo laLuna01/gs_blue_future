@@ -607,28 +607,28 @@ header {
   }
   .menu-hamburger {
     display: block;
+    z-index: 1000;
   }
   .menu-dropdown {
-    width: 250px;
-    height: 320px;
+    border: white solid 1px;
+    width: 70%;
+    height: 340px;
     flex-direction: column;
     display: flex;
     position: fixed;
-    right: 5px;
-    top: 95px;
-    padding-top: 10px;
-    background-color: rgb(25, 25, 82);
+    right: 0;
+    top: 0;
+    padding-top: 30px;
+    background-color: rgba(25, 25, 82, 0.534);
+    backdrop-filter: blur(3px);
     justify-content: space-between;
-    border-radius: 20px;
+    border-bottom-left-radius: 15px;
   }
   .pages-dropdown > li {
     font-size: 20px;
     width: 100%;
     padding: 15px;
     padding-left: 30px;
-  }
-  .pages-dropdown > li:hover {
-    background-color: rgb(31, 52, 109);
   }
   .login-dropdown {
     padding: 15px;
