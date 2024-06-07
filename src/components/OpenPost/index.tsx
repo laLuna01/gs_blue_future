@@ -1,13 +1,19 @@
-import React, { useCallback, useEffect } from "react";
+import React, { useCallback, useEffect, useState } from "react";
 import { Props } from "./interface";
 
 const OpenPost = (props: Props) => {
+  let [logradouro, setLogradouro] = useState("");
+  let [bairro, setBairro] = useState("");
+  let [cidade, setCidade] = useState("");
 
   const pegarEndereco = useCallback(async () => {
     try {
-        const response = await fetch("http://localhost:8080/endereco" + props.idEndereco);
+        const response = await fetch("http://localhost:8080/endereco/id/" + props.idEndereco);
         const result = await response.json();
         console.log(result)
+        setLogradouro(result.logradouro)
+        setBairro(result.bairro)
+        setCidade(result.localidade)
     } catch (error) {
         console.error("Erro ao pegar dados:", error);
     }
@@ -25,7 +31,7 @@ const OpenPost = (props: Props) => {
         <div className="autor-data">
             <p>{`${props.denuncia ? "Denunciado por: " : "Publicado por: "}` + props.autor}</p>
             {props.denuncia && <div>
-                <p>{"Em tanana" + props.idEndereco}</p>
+                <p>{"Em " + logradouro + ", " + bairro + " - " + cidade}</p>
               </div>
             }
             <p>{props.data}</p>
